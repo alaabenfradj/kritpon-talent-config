@@ -5,7 +5,53 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8081/eureka
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
 
 info:
   app:
     name: ${spring.application.name}
+
+
+## GATEWAY CONFIGURATIONS
+spring:
+  cloud:
+    gateway:
+      routes:
+        ## CANDIDATE SERVICE
+        - id: candidate-service
+          uri: lb://candidate-service
+          predicates:
+            - Path=/candidates/**
+          filters:
+            - StripPrefix=1
+        ## COMMUNICATION SERVICE
+        - id: communication-service
+          uri: lb://communication-service
+          predicates:
+            - Path=/communications/**
+          filters:
+            - StripPrefix=1
+        ## QUALIFICATION SERVICE
+        - id: qualification-service
+          uri: lb://qualification-service
+          predicates:
+            - Path=/qualifications/**
+          filters:
+            - StripPrefix=1
+        ## JOB SERVICE
+        - id: job-service
+          uri: lb://job-service
+          predicates:
+            - Path=/jobs/**
+          filters:
+            - StripPrefix=1
+
+#Logging
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    reactor.netty.http.client: DEBUG
