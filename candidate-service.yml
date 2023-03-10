@@ -19,6 +19,7 @@ spring:
     hibernate:
       ddl-auto: update
 
+#Circuit Breaker config 
 management:
   endpoints:
     web:
@@ -55,3 +56,11 @@ resilience4j:
     instances:
       breaker:
         timeout-duration: 3s
+
+
+#Tracing the requests
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: '1.0'
