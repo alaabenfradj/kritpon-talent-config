@@ -26,8 +26,7 @@ spring:
           uri: lb://candidate-service
           predicates:
             - Path=/candidates/**
-          filters:
-            - StripPrefix=1
+          
         ## COMMUNICATION SERVICE
         - id: communication-service
           uri: lb://communication-service
