@@ -32,22 +32,19 @@ spring:
           uri: lb://communication-service
           predicates:
             - Path=/communications/**
-          filters:
-            - StripPrefix=1
+          
         ## QUALIFICATION SERVICE
         - id: qualification-service
           uri: lb://qualification-service
           predicates:
             - Path=/qualifications/**
-          filters:
-            - StripPrefix=1
+          
         ## JOB SERVICE
         - id: job-service
           uri: lb://job-service
           predicates:
             - Path=/jobs/**
-          filters:
-            - StripPrefix=1
+          
 
 #Logging
 logging:
