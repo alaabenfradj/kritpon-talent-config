@@ -54,7 +54,7 @@ spring:
         oauth2:
             resourceserver:
                 jwt:
-                    issuer-uri: http://localhost:18080/realms/spring-boot-microservices-realm
+                    issuer-uri: http://localhost:18080/auth/realms/spring-boot-microservices-realm
 
 #Logging
 logging:
