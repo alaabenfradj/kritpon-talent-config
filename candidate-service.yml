@@ -58,13 +58,13 @@ resilience4j:
         timeout-duration: 3s
 
 # Kafka Properties
-  kafka:
-    bootstrap-servers: localhost:9092
-    template:
-      default-topic: notificationTopic
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-      properties:
-        spring.json.type.mapping: event:kripton.candidateservice.kafka.CandidateAppliedEvent
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    template:
+#      default-topic: notificationTopic
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+#      properties:
+#        spring.json.type.mapping: event:kripton.candidateservice.kafka.CandidateAppliedEvent
 
