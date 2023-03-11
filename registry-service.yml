@@ -11,10 +11,3 @@ eureka:
     prefer-ip-address: true
     hostname: localhost
 
-#Tracing the requests
-spring:
-  zipkin:
-    base-url: http://localhost:9411
-  sleuth:
-    sampler:
-      probability: '1.0'
