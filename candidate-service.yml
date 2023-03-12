@@ -64,7 +64,7 @@ resilience4j:
       default-topic: test
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 #      properties:
 #        spring.json.type.mapping: event:kripton.candidateservice.kafka.CandidateAppliedEvent
 
