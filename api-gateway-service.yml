@@ -21,24 +21,26 @@ spring:
   cloud:
     gateway:
       routes:
+        ## USER SERVICE
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**
         ## CANDIDATE SERVICE
         - id: candidate-service
           uri: lb://candidate-service
           predicates:
             - Path=/candidates/**
-          
         ## COMMUNICATION SERVICE
         - id: communication-service
           uri: lb://communication-service
           predicates:
             - Path=/communications/**
-          
         ## QUALIFICATION SERVICE
         - id: qualification-service
           uri: lb://qualification-service
           predicates:
             - Path=/qualifications/**
-          
         ## JOB SERVICE
         - id: job-service
           uri: lb://job-service
