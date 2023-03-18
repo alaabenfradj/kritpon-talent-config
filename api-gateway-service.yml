@@ -52,12 +52,11 @@ spring:
           predicates:
             - Path=/eureka/**
 #Security
-keycloak:
-  realm: kripton-talent-application
-  auth-server-url: http://localhost:18080/auth
-  resource: kripton-talent-client
-  public-client: true
-  bearer-only: true
+  security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://localhost:18080/auth/realms/kripton-talent-application
 
 #Logging
 logging:
