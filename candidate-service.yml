@@ -11,6 +11,11 @@ info:
     name: ${spring.application.name}
 
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:18080/auth/realms/kripton-talent-application/protocol/openid-connect/certs
   datasource:
     url: jdbc:mysql://localhost:3306/candidate-service-db
     username: root
@@ -59,14 +64,5 @@ resilience4j:
       breaker:
         timeout-duration: 3s
 
-# Kafka Properties
-#  kafka:
-#    bootstrap-servers: localhost:9092
-#    template:
-#      default-topic: test
-#    producer:
-#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-#      properties:
-#        spring.json.type.mapping: event:kripton.candidateservice.config.kafka.CandidateAppliedEvent
+
 
