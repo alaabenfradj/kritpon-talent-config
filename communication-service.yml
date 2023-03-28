@@ -10,15 +10,15 @@ info:
   app:
     name: ${spring.application.name}
 
-# Kafka Properties
-#spring:
-#  kafka:
-#    bootstrap-servers: localhost:9092
-#    template:
-#      default-topic: test
-#    consumer:
-#      group-id: notificationId
-#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-#      properties:
-#        spring.json.type.mapping: event:kripton.communicationservice.kafka.CandidateAppliedEvent
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: alaa.benfradj@esprit.tn
+    password: csmgpyjsdskdtzuk
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

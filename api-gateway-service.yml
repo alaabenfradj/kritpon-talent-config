@@ -20,24 +20,12 @@ info:
 spring:
   cloud:
     gateway:
-      default-filters:
-        - TokenRelay
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "http://localhost:4200"
-            allowedHeaders: "*"
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
       routes:
         ## USER SERVICE
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/users/**
+            - Path=/api/users/**
         ## CANDIDATE SERVICE
         - id: candidate-service
           uri: lb://candidate-service

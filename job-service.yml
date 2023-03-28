@@ -11,6 +11,9 @@ info:
     name: ${spring.application.name}
 
 spring:
+  batch:
+    job:
+      enabled: false
   datasource:
     url: jdbc:mysql://localhost:3306/job-service-db
     username: root
