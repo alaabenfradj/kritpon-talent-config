@@ -1,5 +1,5 @@
 server:
-  port: 8100
+  port: 0
 
 eureka:
   client:
@@ -11,9 +11,6 @@ info:
     name: ${spring.application.name}
 
 spring:
-  batch:
-    job:
-      enabled: false
   servlet:
     multipart:
       max-file-size: 10MB
