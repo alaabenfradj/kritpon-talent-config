@@ -4,5 +4,5 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka:8081/eureka
+      defaultZone: http://registry-service:8081/eureka
 
