@@ -9,11 +9,14 @@ eureka:
 info:
   app:
     name: ${spring.application.name}
-
+##file input batch example
+file:
+  input: candidates.csv
+###
 spring:
   batch:
     jdbc:
-      initialize-schema: always
+      initialize-schema: true
     job:
       enabled: false
   servlet:
