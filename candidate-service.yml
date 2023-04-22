@@ -11,6 +11,11 @@ info:
     name: ${spring.application.name}
 
 spring:
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      enabled: false
   servlet:
     multipart:
       max-file-size: 10MB
