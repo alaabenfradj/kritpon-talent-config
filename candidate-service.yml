@@ -15,7 +15,7 @@ info:
 spring:
   batch:
     jdbc:
-      initialize-schema: true
+      initialize-schema: always
     job:
       enabled: false
   servlet:
