@@ -9,3 +9,9 @@ eureka:
 info:
   app:
     name: ${spring.application.name}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'prometheus'
