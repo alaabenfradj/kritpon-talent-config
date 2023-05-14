@@ -8,6 +8,6 @@ eureka:
 
 spring:
   datasource:
-    url: jdbc:mysql://qualification_db:3330/qualification-service-db
+    url: jdbc:mysql://database:3330/kripton-talent-db
     username: root
     password: root
