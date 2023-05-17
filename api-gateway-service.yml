@@ -30,6 +30,7 @@ spring:
           uri: lb://candidate-service
           predicates:
             - Path=/api/candidates/**
+            - Path=/api/tasks/**
         ## COMMUNICATION SERVICE
         - id: communication-service
           uri: lb://communication-service
@@ -55,7 +56,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak:18080/realms/spring-boot-microservices-realm
+          issuer-uri: http://localhost:18080/realms/spring-boot-microservices-realm
 #Logging
 logging:
   level:
