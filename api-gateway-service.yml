@@ -30,8 +30,8 @@ spring:
           uri: lb://candidate-service
           predicates:
             - Path=/api/candidates/**
-            - Path=/api/tasks/**
-            - Path=/api/projects/**
+#            - Path=/api/tasks/**
+#            - Path=/api/projects/**
         ## COMMUNICATION SERVICE
         - id: communication-service
           uri: lb://communication-service
