@@ -5,4 +5,4 @@ eureka:
     service-url:
       defaultZone: http://registry-service:8081/eureka
 
-serverUrl: http://keycloak:18080/
+serverUrl: http://172.23.0.3:18080/
