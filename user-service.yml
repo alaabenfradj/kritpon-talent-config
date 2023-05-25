@@ -1,7 +1,7 @@
 server:
   port: 6004
 
-serverUrl: http://localhost:18080/
+serverUrl: http://localhost:8080/
 
 eureka:
   client:
