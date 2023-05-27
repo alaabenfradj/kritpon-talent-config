@@ -1,6 +1,6 @@
 server:
   port: 6002
-kafkaServerUrl : localhost:9092
+kafkaServerUrl : "localhost:9092"
 eureka:
   client:
     service-url:
