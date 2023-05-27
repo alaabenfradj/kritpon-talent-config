@@ -1,6 +1,7 @@
 server:
   port: 6002
 kafkaServerUrl : "broker:9092"
+uploadDirectory : "C:\\Users\\alaab\\OneDrive\\Desktop\\PFE-Files\\kripton-talent-front-new\\src\\assets\\images\\candidates"
 eureka:
   client:
     service-url:

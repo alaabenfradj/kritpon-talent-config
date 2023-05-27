@@ -1,6 +1,8 @@
 server:
   port: 6001
 kafkaServerUrl : "localhost:9092"
+uploadDirectory : "C:\\Users\\alaab\\OneDrive\\Desktop\\PFE-Files\\kripton-talent-front-new\\src\\assets\\images\\candidates"
+matcher_parser_serverUrl : "http://localhost:6000/"
 eureka:
   client:
     service-url:
