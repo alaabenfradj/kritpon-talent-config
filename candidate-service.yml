@@ -1,7 +1,6 @@
+kafkaServerUrl : "localhost:9092"
 server:
   port: 6001
-kafkaServerUrl : "localhost:9092"
-uploadDirectory : "C:\\Users\\alaab\\OneDrive\\Desktop\\PFE-Files\\kripton-talent-front-new\\src\\assets\\images\\candidates"
 matcher_parser_serverUrl : "http://localhost:6000/"
 eureka:
   client:
@@ -15,7 +14,15 @@ info:
 file:
   input: candidates.csv
 ###
+uploadDirectory : "./uploads"
 spring:
+  cloud:
+    azure:
+      storage:
+        blob:
+          account-name: kriptonstorage
+          account-key: Rk2w4XZE9b2kGDHc9NFzNgue7Dc+7fULw/+f0LLKlH1OInE5Asbmsdv8cdF4vaayKfAzWeAe+T7n+AStMzFF0A==
+          endpoint: https://kriptonstorage.blob.core.windows.net/
   batch:
     jdbc:
       initialize-schema: always
@@ -74,6 +81,5 @@ resilience4j:
     instances:
       breaker:
         timeout-duration: 3s
-
 
 
