@@ -15,14 +15,10 @@ file:
   input: candidates.csv
 ###
 uploadDirectory : "./uploads"
+azure-account-name: "kriptonstorage"
+azure-account-key: "Rk2w4XZE9b2kGDHc9NFzNgue7Dc+7fULw/+f0LLKlH1OInE5Asbmsdv8cdF4vaayKfAzWeAe+T7n+AStMzFF0A=="
+azure-endpoint: https://kriptonstorage.blob.core.windows.net/
 spring:
-  cloud:
-    azure:
-      storage:
-        blob:
-          account-name: kriptonstorage
-          account-key: Rk2w4XZE9b2kGDHc9NFzNgue7Dc+7fULw/+f0LLKlH1OInE5Asbmsdv8cdF4vaayKfAzWeAe+T7n+AStMzFF0A==
-          endpoint: https://kriptonstorage.blob.core.windows.net/
   batch:
     jdbc:
       initialize-schema: always
