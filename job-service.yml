@@ -2,6 +2,9 @@ server:
   port: 6002
 kafkaServerUrl : "localhost:9092"
 uploadDirectory : "C:\\Users\\alaab\\OneDrive\\Desktop\\PFE-Files\\kripton-talent-front-new\\src\\assets\\images\\jobs"
+azure-account-name: "kriptonstorage"
+azure-account-key: "Rk2w4XZE9b2kGDHc9NFzNgue7Dc+7fULw/+f0LLKlH1OInE5Asbmsdv8cdF4vaayKfAzWeAe+T7n+AStMzFF0A=="
+azure-endpoint: https://kriptonstorage.blob.core.windows.net/
 eureka:
   client:
     service-url:
