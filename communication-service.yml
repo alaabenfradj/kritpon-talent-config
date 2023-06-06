@@ -1,11 +1,11 @@
 server:
   port: 6005
-kafkaServerUrl : "http://localhost:9092"
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8081/eureka
-
+kafkaServerUrl : "http://localhost:9092"
 info:
   app:
     name: ${spring.application.name}
