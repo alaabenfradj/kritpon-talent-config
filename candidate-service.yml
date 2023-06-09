@@ -16,7 +16,7 @@ file:
 ###
 uploadDirectory : "./uploads"
 azure-account-name: "kriptonstorage"
-azure-account-key: "Rk2w4XZE9b2kGDHc9NFzNgue7Dc+7fULw/+f0LLKlH1OInE5Asbmsdv8cdF4vaayKfAzWeAe+T7n+AStMzFF0A=="
+azure-account-key: "H4azGiPlFSwhhNvZhLensPJC1rtlHcxVwy5lsb7GmgC05eELXxzP6IA3R4hN5GPt8qQRXgjIOViB+ASt3Rl3Yg=="
 azure-endpoint: https://kriptonstorage.blob.core.windows.net/
 spring:
   batch:
