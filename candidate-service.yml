@@ -30,7 +30,7 @@ spring:
       max-request-size: 10MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/kripton-talent-db?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://localhost:3308/kripton-talent-db?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
     username: root
     password:
   jpa:
