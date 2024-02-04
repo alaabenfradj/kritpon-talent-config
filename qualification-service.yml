@@ -14,7 +14,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/kripton-talent-db?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
     username: root
-    password:
+    password: root
   jpa:
     show-sql: true
     hibernate:
